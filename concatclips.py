@@ -9,7 +9,7 @@ def main():
     for count, file_name in enumerate(os.listdir(dir_path)):
         #Checks for video files with .mkv extension (might not work with other formats though there is no reason it shouldn't)
         if file_name.endswith(".mkv"):
-            dst = f"video{str(count)}.mkv"
+            dst = f"clip{str(count)}.mkv"
             src =f"{dir_path}/{file_name}"
             dst =f"{dir_path}/{dst}"
             
